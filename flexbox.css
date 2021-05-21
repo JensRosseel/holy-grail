@@ -1,0 +1,47 @@
+body{
+    height: 100%;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 150px);
+}
+header{
+    background-color: orange;
+    flex-basis: 100%;
+    box-sizing: border-box;
+}
+nav{
+    background-color: peachpuff;
+    flex-basis: 20%;  
+}
+aside{
+    background-color: peachpuff;
+    flex-basis: 20%;
+}
+main{
+    flex-basis: 60%;
+}
+footer{
+    background-color: maroon;
+    color: white;
+}
+@media only screen and (max-width: 1024px){
+    .container2{
+        flex-direction: column;
+    }
+    nav{
+        flex-basis: 10%;
+    }
+    aside{
+        flex-basis: 10%;
+    }
+    main{
+        flex-basis: 80%;
+    }
+}

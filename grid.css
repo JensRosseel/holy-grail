@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 9.7fr 1fr;
+}
+body{
+    height: 100%;
+    text-align: center;
+}
+header{
+    background-color: orange;
+    grid-column: 1/-1;
+}
+nav{
+    background-color: peachpuff; 
+}
+aside{
+    background-color: peachpuff;
+}
+footer{
+    background-color: maroon;
+    color: white;
+    grid-column: 1/-1;
+}
+@media only screen and (max-width: 1024px){
+    .container{
+        grid-template-rows: 1fr 1fr 8.4fr 1fr 1fr;
+    }
+    nav, aside, main{
+        grid-column: 1/-1;
+    }
+}
